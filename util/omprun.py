@@ -63,6 +63,7 @@ def main() -> int:
                 times.append(float(match.group()))
             mean_time = sum(times)/len(times)
             writer.writerow([thread, mean_time])
+    return 0
 
 
 def parse_args() -> argparse.Namespace:

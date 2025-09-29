@@ -19,5 +19,11 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# Vscode
+.vscode/
+
 # Output Products
 *.csv
+!docs/examples/*.csv
+*.png
+!docs/examples/*.png

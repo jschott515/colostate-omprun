@@ -12,12 +12,21 @@ license = {text = "MIT"}
 authors = [
     {name = "jschott", email = "jschott515@gmail.com"},
 ]
-keywords = []
 classifiers = [
     "Programming Language :: Python :: 3.11",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "matplotlib>=3.9.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/jschott515/colostate-omprun"
+
+[tool.setuptools.packages.find]
+where = ["."]
 
 [project.scripts]
-omprun = "omprun:main"
+omprun = "util.omprun:main"
+splot = "util.splot:main"
